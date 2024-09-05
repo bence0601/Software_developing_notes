@@ -28,9 +28,9 @@ function CreateMatrix(n){
 //O(2^n) Exponenciális tár
 // Példa : N méretű halmaz összes részhalmazának tárolása
 
-function GenerateSubSets(s){
+function GenerateSubSets(n){
     const subsets = [[]];
-    for(const elem of s){
+    for(const elem of n){
         const newSubsets  = subsets.map(subset => subset.concat(elem))
         subsets.push(...newSubsets)
     }

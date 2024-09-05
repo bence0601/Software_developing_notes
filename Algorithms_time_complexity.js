@@ -10,7 +10,7 @@ function getElement(arr,index){
 }
 
 //O(log n) logaritmikus idő
-//a futási idő logaritmikusan nő a bemenet méretének növekedésével
+//a futási idő logaritmikusan nő a bemenet méretének növekedésével, minden iterációval feleződik a futási idő
 // Példa : bináris keresés egy rendezett tömbben
 
 function binarySearch(arr,target){
@@ -32,7 +32,7 @@ return -1
 
 //O(n) lineáris idő
 // A futási idő egyenesen arányosan nő a bemenet értékével
-// Példa : Legnagyobb érték megkeresése egy rendezett tömbben
+// Példa : Legnagyobb érték megkeresése egy  tömbben
 
 function FindMax(arr){
     let maxNum = arr[0];
