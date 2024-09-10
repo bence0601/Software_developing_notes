@@ -15,18 +15,23 @@ class FindLoopClass{
 
 
             if(slow_p === fast_p){
-                return true;
+                return DetectLoopStart(head,fast_p)
             }
         }
+        return -1
     }
 }
 
-class DetectLoopStart{
-    // function for determining which node is the start of the loop
-    if(FindLoopClass.DetectLoop(head)){
-        let slow_p = head
-    })
+function DetectLoopStart(head,meetingPoint){
+    let starterPointer = head;
+    let index = 0;
 
+    while(starterPointer !== meetingPoint){
+        starterPointer = starterPointer.next;
+        meetingPoint = meetingPoint.next;
+        index++;
+    }
+    return index;
 }
 
 let head = new Node(10);
