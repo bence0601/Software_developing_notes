@@ -16,3 +16,10 @@ function mergeOverlap(arr){
     }
     return resIdx +1;
 }
+
+  let arr = [[6,8],[1,9],[2,4],[4,7]];
+  let size = mergeOverlap(arr)
+  console.log("The merged intervals are: ")
+  for(let i = 0;i<size;i++){
+    console.log(`[${arr[i][0]}, ${arr[i][1]}]`);
+}
